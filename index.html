@@ -14,7 +14,8 @@
 <meta property="og:site_name" content="Pagecraft">
 <meta property="og:title" content="Pagecraft — sites sob medida para negócios pequenos">
 <meta property="og:description" content="Sites programados do zero, prontos em poucos dias. Domínio e hospedagem inclusos no 1º ano.">
-<meta property="og:image" content="/og.png">
+<meta property="og:url" content="https://pagecraft.com.br/">
+<meta property="og:image" content="https://pagecraft.com.br/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -53,6 +54,14 @@ h1,h2,h3{text-wrap:balance}
 .btn-sm{min-height:44px;padding:0 20px;font-size:15px;white-space:nowrap}
 @media (max-width:520px){.hide-sm{display:none}}
 .wa-ico{width:18px;height:18px;flex:none}
+.ig-ico{width:20px;height:20px;flex:none}
+.head-actions{display:flex;align-items:center;gap:10px}
+.btn-ico{min-height:44px;width:44px;padding:0;background:transparent;color:var(--tinta)}
+.btn-ico:hover{background:var(--papel-2);color:var(--tinta)}
+.ig-cta{display:inline-flex;align-items:center;gap:10px;width:fit-content;min-height:44px;padding:0 18px;border:1.5px solid var(--papel);border-radius:10px;color:var(--papel);font-weight:600;font-size:15px;text-decoration:none}
+.ig-cta:hover{background:var(--cobalto-escuro);color:var(--papel)}
+.foot-links{display:flex;flex-wrap:wrap;gap:24px;align-items:center}
+.foot-links a{display:inline-flex;align-items:center;gap:8px}
 
 /* header */
 header{border-bottom:1px solid var(--linha)}
@@ -186,7 +195,10 @@ footer{background:var(--tinta);color:var(--linha)}
       <a href="#investimento">Investimento</a>
       <a href="#duvidas">Dúvidas</a>
     </nav>
-    <a class="btn btn-pri btn-sm wa-link" href="https://wa.me/5521966920110" target="_blank" rel="noopener"><span class="hide-sm">Chamar no&nbsp;</span>WhatsApp</a>
+    <div class="head-actions">
+      <a class="btn btn-ico" href="https://www.instagram.com/pagecraft.br/" target="_blank" rel="noopener" aria-label="Instagram da Pagecraft (@pagecraft.br)"><svg class="ig-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
+      <a class="btn btn-pri btn-sm wa-link" href="https://wa.me/5521966920110" target="_blank" rel="noopener"><span class="hide-sm">Chamar no&nbsp;</span>WhatsApp</a>
+    </div>
   </div>
 </header>
 
@@ -338,6 +350,7 @@ footer{background:var(--tinta);color:var(--linha)}
         <h2>Vamos tirar o seu site do papel?</h2>
         <p>Preencha ao lado e sua mensagem abre pronta no WhatsApp. Ou chame direto:</p>
         <div class="numero"><span id="num">+55 21 96692-0110</span><button type="button" class="copy" id="copiar">COPIAR</button></div>
+        <a class="ig-cta" href="https://www.instagram.com/pagecraft.br/" target="_blank" rel="noopener"><svg class="ig-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>Siga no Instagram @pagecraft.br</a>
       </div>
       <form id="form" novalidate>
         <label for="f-nome">Nome
@@ -371,7 +384,10 @@ footer{background:var(--tinta);color:var(--linha)}
   <div class="wrap foot">
     <div class="foot-top">
       <a class="foot-logo" href="#topo" aria-label="Pagecraft, voltar ao início"><img src="/assets/pagecraft-logo-negativo.svg" alt="pagecraft" height="60"></a>
-      <a href="https://wa.me/5521966920110" target="_blank" rel="noopener">WhatsApp: +55 21 96692-0110</a>
+      <div class="foot-links">
+        <a href="https://www.instagram.com/pagecraft.br/" target="_blank" rel="noopener"><svg class="ig-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>@pagecraft.br</a>
+        <a href="https://wa.me/5521966920110" target="_blank" rel="noopener">WhatsApp: +55 21 96692-0110</a>
+      </div>
     </div>
     <div class="foot-bot"><span>© 2026 PAGECRAFT</span><span>SITES SOB MEDIDA, FEITOS COM CUIDADO</span></div>
   </div>
