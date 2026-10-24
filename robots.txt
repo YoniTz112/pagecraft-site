@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://pagecraft.com.br/sitemap.xml

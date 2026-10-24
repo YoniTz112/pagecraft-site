@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pagecraft — sites sob medida para negócios pequenos</title>
-<meta name="description" content="Pagecraft: sites sob medida, feitos em código, para negócios pequenos. Domínio e hospedagem inclusos por 1 ano.">
+<title>Pagecraft — Criação de sites sob medida para pequenos negócios</title>
+<meta name="description" content="Criamos sites sob medida para pequenos negócios, programados do zero e prontos em poucos dias. Domínio e hospedagem inclusos no 1º ano. Orçamento pelo WhatsApp.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://pagecraft.com.br/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -12,13 +14,54 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Pagecraft">
-<meta property="og:title" content="Pagecraft — sites sob medida para negócios pequenos">
+<meta property="og:title" content="Pagecraft — Criação de sites sob medida para pequenos negócios">
 <meta property="og:description" content="Sites programados do zero, prontos em poucos dias. Domínio e hospedagem inclusos no 1º ano.">
 <meta property="og:url" content="https://pagecraft.com.br/">
 <meta property="og:image" content="https://pagecraft.com.br/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo da Pagecraft com o texto: Sites sérios para negócios pequenos.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pagecraft — Criação de sites sob medida para pequenos negócios">
+<meta name="twitter:description" content="Sites programados do zero, prontos em poucos dias. Domínio e hospedagem inclusos no 1º ano.">
+<meta name="twitter:image" content="https://pagecraft.com.br/og.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://pagecraft.com.br/#organization",
+      "name": "Pagecraft",
+      "url": "https://pagecraft.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://pagecraft.com.br/logo-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Criação de sites sob medida para pequenos negócios, programados do zero, com domínio e hospedagem inclusos no primeiro ano.",
+      "email": "pagecraftbrasil@gmail.com",
+      "sameAs": ["https://www.instagram.com/pagecraft.br/"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-21-96692-0110",
+        "contactType": "customer service",
+        "areaServed": "BR",
+        "availableLanguage": "Portuguese"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://pagecraft.com.br/#website",
+      "url": "https://pagecraft.com.br/",
+      "name": "Pagecraft",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://pagecraft.com.br/#organization" }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
@@ -70,6 +113,9 @@ header{border-bottom:1px solid var(--linha)}
 .logo img{height:38px;width:auto;display:block}
 .nav{display:flex;gap:36px;font-weight:500;font-size:15px}
 .nav a{color:var(--tinta);text-decoration:none}.nav a:hover{color:var(--cobalto)}
+.nav a{white-space:nowrap}
+@media (max-width:1100px){.nav{gap:22px}}
+@media (max-width:940px){.nav{display:none}}
 
 /* hero */
 .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:72px;align-items:center;padding-block:96px 88px}
@@ -188,12 +234,13 @@ footer{background:var(--tinta);color:var(--linha)}
 <body>
 <header>
   <div class="wrap head">
-    <a class="logo" href="#topo" aria-label="Pagecraft, início"><img src="/assets/pagecraft-logo.svg" alt="pagecraft" width="161" height="38"></a>
+    <a class="logo" href="#topo" aria-label="Pagecraft, início"><img src="/assets/pagecraft-logo.svg" alt="pagecraft" width="161" height="38" fetchpriority="high"></a>
     <nav class="nav" aria-label="Principal">
       <a href="#servicos">Serviços</a>
       <a href="#processo">Como funciona</a>
       <a href="#investimento">Investimento</a>
       <a href="#duvidas">Dúvidas</a>
+      <a href="#contato">Contato</a>
     </nav>
     <div class="head-actions">
       <a class="btn btn-ico" href="https://www.instagram.com/pagecraft.br/" target="_blank" rel="noopener" aria-label="Instagram da Pagecraft (@pagecraft.br)"><svg class="ig-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
@@ -383,7 +430,7 @@ footer{background:var(--tinta);color:var(--linha)}
 <footer>
   <div class="wrap foot">
     <div class="foot-top">
-      <a class="foot-logo" href="#topo" aria-label="Pagecraft, voltar ao início"><img src="/assets/pagecraft-logo-negativo.svg" alt="pagecraft" height="60"></a>
+      <a class="foot-logo" href="#topo" aria-label="Pagecraft, voltar ao início"><img src="/assets/pagecraft-logo-negativo.svg" alt="pagecraft" width="194" height="60" loading="lazy"></a>
       <div class="foot-links">
         <a href="https://www.instagram.com/pagecraft.br/" target="_blank" rel="noopener"><svg class="ig-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>@pagecraft.br</a>
         <a href="https://wa.me/5521966920110" target="_blank" rel="noopener">WhatsApp: +55 21 96692-0110</a>
