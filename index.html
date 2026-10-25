@@ -473,6 +473,13 @@ footer{background:var(--tinta);color:var(--linha)}
   build();
   document.getElementById("form").addEventListener("submit", function(e){ e.preventDefault(); build(); });
 
+  // depois de abrir o WhatsApp, esta aba vai para a página de pedido recebido
+  document.addEventListener("click", function(e){
+    var a = e.target.closest && e.target.closest('a[href^="https://wa.me/"]');
+    if (!a || e.defaultPrevented) return;
+    setTimeout(function(){ location.href = "/obrigado"; }, 600);
+  });
+
   // copy number
   var copiar = document.getElementById("copiar");
   copiar.addEventListener("click", function(){
