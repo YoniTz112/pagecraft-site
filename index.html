@@ -236,11 +236,11 @@ footer{background:var(--tinta);color:var(--linha)}
   <div class="wrap head">
     <a class="logo" href="#topo" aria-label="Pagecraft, início"><img src="/assets/pagecraft-logo.svg" alt="pagecraft" width="161" height="38" fetchpriority="high"></a>
     <nav class="nav" aria-label="Principal">
-      <a href="#servicos">Serviços</a>
-      <a href="#processo">Como funciona</a>
-      <a href="#investimento">Investimento</a>
-      <a href="#duvidas">Dúvidas</a>
-      <a href="#contato">Contato</a>
+      <a href="/servicos">Serviços</a>
+      <a href="/como-funciona">Como funciona</a>
+      <a href="/servicos#investimento">Investimento</a>
+      <a href="/duvidas">Dúvidas</a>
+      <a href="/contato">Contato</a>
     </nav>
     <div class="head-actions">
       <a class="btn btn-ico" href="https://www.instagram.com/pagecraft.br/" target="_blank" rel="noopener" aria-label="Instagram da Pagecraft (@pagecraft.br)"><svg class="ig-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
@@ -436,6 +436,7 @@ footer{background:var(--tinta);color:var(--linha)}
         <a href="https://wa.me/5521966920110" target="_blank" rel="noopener">WhatsApp: +55 21 96692-0110</a>
       </div>
     </div>
+    <nav class="foot-links" aria-label="Páginas"><a href="/servicos">Serviços</a><a href="/como-funciona">Como funciona</a><a href="/duvidas">Dúvidas</a><a href="/contato">Contato</a></nav>
     <div class="foot-bot"><span>© 2026 PAGECRAFT</span><span>SITES SOB MEDIDA, FEITOS COM CUIDADO</span></div>
   </div>
 </footer>
@@ -456,6 +457,7 @@ footer{background:var(--tinta);color:var(--linha)}
   // contact form → live WhatsApp link
   var ids = ["f-nome","f-negocio","f-servico","f-msg"];
   var btn = document.getElementById("enviar");
+  if (btn) {
   function build(){
     var v = function(id){ return document.getElementById(id).value.trim(); };
     var linhas = ["Olá, Pagecraft!"];
@@ -472,6 +474,7 @@ footer{background:var(--tinta);color:var(--linha)}
   });
   build();
   document.getElementById("form").addEventListener("submit", function(e){ e.preventDefault(); build(); });
+  }
 
   // depois de abrir o WhatsApp, esta aba vai para a página de pedido recebido
   document.addEventListener("click", function(e){
@@ -482,7 +485,7 @@ footer{background:var(--tinta);color:var(--linha)}
 
   // copy number
   var copiar = document.getElementById("copiar");
-  copiar.addEventListener("click", function(){
+  if (copiar) copiar.addEventListener("click", function(){
     var done = function(){ copiar.textContent = "COPIADO"; setTimeout(function(){ copiar.textContent = "COPIAR"; }, 1800); };
     var fallback = function(){
       var r = document.createRange(); r.selectNodeContents(document.getElementById("num"));
